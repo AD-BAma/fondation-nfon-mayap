@@ -201,7 +201,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Feature Section Pill Tabs Interaction
+  // 4. Mission & Vision Tabs Interaction (Good Soul Style)
+  const tabBtnMission = document.getElementById('tabBtnMission');
+  const tabBtnVision = document.getElementById('tabBtnVision');
+  const tabPaneMission = document.getElementById('tabPaneMission');
+  const tabPaneVision = document.getElementById('tabPaneVision');
+
+  if (tabBtnMission && tabBtnVision && tabPaneMission && tabPaneVision) {
+    tabBtnMission.addEventListener('click', () => {
+      tabBtnMission.classList.add('active');
+      tabBtnVision.classList.remove('active');
+      tabPaneMission.classList.add('active');
+      tabPaneVision.classList.remove('active');
+    });
+
+    tabBtnVision.addEventListener('click', () => {
+      tabBtnVision.classList.add('active');
+      tabBtnMission.classList.remove('active');
+      tabPaneVision.classList.add('active');
+      tabPaneMission.classList.remove('active');
+    });
+  }
+
+  // 4b. Feature Section Pill Tabs Interaction
   const pillButtons = document.querySelectorAll('.feature-pill-btn');
   const pillNarratives = {
     transparence: {

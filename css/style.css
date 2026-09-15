@@ -961,18 +961,186 @@ button {
 }
 
 /* ==========================================================================
-   PROJECTS SHOWCASE SECTION
+   MISSION & VISION DUAL TABS (GOOD SOUL STYLE)
+   ========================================================================== */
+.about-tabs-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.about-tab-btn {
+  background: #f1f5f9;
+  color: var(--text-heading);
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 800;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.about-tab-btn:hover {
+  background: #fef3c7;
+  color: #b45309;
+  border-color: #f59e0b;
+}
+
+.about-tab-btn.active {
+  background: #f59e0b;
+  color: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+}
+
+.about-tab-pane {
+  display: none;
+  animation: fadeInPane 0.4s ease forwards;
+}
+
+.about-tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeInPane {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating Badge on About Photo (Charius / Gainlove Style) */
+.welcome-photo-wrap {
+  position: relative;
+  border-radius: 40px 12px 40px 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.2);
+}
+
+.welcome-photo-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 14px 20px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-photo-badge-icon {
+  font-size: 1.8rem;
+}
+
+.welcome-photo-badge-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.welcome-photo-badge-sub {
+  font-size: 0.78rem;
+  color: #fef08a;
+}
+
+/* ==========================================================================
+   4-STAT COUNTER BAR (CHARIUS & GAINLOVE STYLE)
+   ========================================================================== */
+.impact-counters-bar {
+  background: #ffffff;
+  padding: 50px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.impact-counters-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.impact-counter-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: #f8fafc;
+  border: 1px solid var(--border-subtle);
+  transition: var(--transition);
+}
+
+.impact-counter-card:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  border-color: #f59e0b;
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.15);
+}
+
+.impact-counter-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fef3c7;
+  color: #d97706;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.impact-counter-number {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: var(--text-heading);
+  line-height: 1.1;
+}
+
+.impact-counter-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+@media (max-width: 992px) {
+  .impact-counters-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .impact-counters-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   PROJECTS SHOWCASE SECTION (CHARIUS / GOOD SOUL STYLE)
    ========================================================================== */
 .projects-section {
   padding: 90px 0;
-  background: #ffffff;
+  background: #f8fafc;
 }
 
 .projects-card-featured {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 40px;
-  background: #f8fafc;
+  background: #ffffff;
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   overflow: hidden;
@@ -983,7 +1151,7 @@ button {
 .projects-featured-img {
   width: 100%;
   height: 100%;
-  min-height: 380px;
+  min-height: 420px;
   object-fit: cover;
 }
 
@@ -993,14 +1161,46 @@ button {
 
 .project-tag-badge {
   display: inline-block;
-  background: #dbeafe;
-  color: #1e40af;
+  background: #fef3c7;
+  color: #b45309;
   font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 800;
-  padding: 4px 12px;
+  padding: 5px 14px;
   border-radius: var(--radius-full);
   margin-bottom: 14px;
+}
+
+.project-progress-wrap {
+  margin-bottom: 24px;
+}
+
+.project-progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.project-progress-bar-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+  border-radius: var(--radius-full);
+}
+
+.project-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.project-progress-labels strong {
+  color: #d97706;
 }
 
 .projects-featured-title {
@@ -1016,6 +1216,67 @@ button {
   color: var(--text-body);
   line-height: 1.75;
   margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   COMMUNITY GALLERY STRIP (CHARIUS STYLE)
+   ========================================================================== */
+.community-gallery-section {
+  padding: 60px 0 0;
+  background: #ffffff;
+}
+
+.gallery-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  overflow: hidden;
+}
+
+.gallery-strip-item {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gallery-strip-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-strip-item:hover img {
+  transform: scale(1.12);
+}
+
+.gallery-strip-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.gallery-strip-item:hover .gallery-strip-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .gallery-strip-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ==========================================================================

@@ -266,35 +266,112 @@
     </section>
 
     <!-- ========================================================================
-         2. QUI SOMMES-NOUS ? (SECTION À PROPOS)
+         2. QUI SOMMES-NOUS ? (SECTION À PROPOS AVEC ONGLETS MISSION / VISION)
          ======================================================================== -->
     <section class="welcome-about-section" id="qui-sommes-nous">
       <div class="container">
         <div class="welcome-about-grid">
           
-          <!-- Photo gauche -->
+          <!-- Photo gauche avec badge flottant (Good Soul / Charius style) -->
           <div class="welcome-photo-wrap">
             <img src="assets/images/njiyap_about.jpg" alt="Fondation Nfon Mayap à Njiyap">
+            <div class="welcome-photo-badge">
+              <span class="welcome-photo-badge-icon">🐆</span>
+              <div>
+                <div class="welcome-photo-badge-title">Fondation Nfon Mayap</div>
+                <div class="welcome-photo-badge-sub">📍 Njiyap – Foumban, Cameroun</div>
+              </div>
+            </div>
           </div>
 
-          <!-- Texte droite -->
+          <!-- Texte droite avec commutateur d'onglets (Good Soul style) -->
           <div class="welcome-about-content">
             <span class="section-badge-blue" data-i18n="about_badge">QUI SOMMES-NOUS ?</span>
             <h2 class="welcome-heading-title" data-i18n="about_title">
               À propos de la <strong>Fondation Nfon Mayap</strong>
             </h2>
-            <p class="welcome-paragraph" data-i18n="about_p1">
-              La <strong>Fondation Nfon Mayap</strong> est une initiative à vocation sociale et humanitaire implantée à <strong>Njiyap</strong>, dans le département du Noun, au Cameroun.
-            </p>
-            <p class="welcome-paragraph" data-i18n="about_p2">
-              Elle a pour ambition de contribuer au développement humain et communautaire à travers des actions concrètes dans les domaines de l’éducation, de la santé, de la solidarité, de l’accès à l’eau et de l’accompagnement des populations.
-            </p>
-            <p class="welcome-paragraph" data-i18n="about_p3">
-              La Fondation souhaite également encourager la solidarité entre les générations et mobiliser les Camerounais de l’intérieur comme de la diaspora autour de projets utiles aux communautés.
-            </p>
+
+            <!-- Onglets Mission / Vision interactifs -->
+            <div class="about-tabs-row">
+              <button class="about-tab-btn active" id="tabBtnMission">
+                <span>🎯</span> <span>Notre Mission</span>
+              </button>
+              <button class="about-tab-btn" id="tabBtnVision">
+                <span>👁️</span> <span>Notre Vision</span>
+              </button>
+            </div>
+
+            <!-- Contenu Onglet 1: Mission -->
+            <div class="about-tab-pane active" id="tabPaneMission">
+              <p class="welcome-paragraph" data-i18n="about_p1">
+                La <strong>Fondation Nfon Mayap</strong> est une initiative à vocation sociale et humanitaire implantée à <strong>Njiyap</strong>, dans le département du Noun, au Cameroun.
+              </p>
+              <p class="welcome-paragraph" data-i18n="about_p2">
+                Elle a pour ambition de contribuer au développement humain et communautaire à travers des actions concrètes dans les domaines de l’éducation, de la santé, de la solidarité, de l’accès à l’eau et de l’accompagnement des populations.
+              </p>
+              <p class="welcome-paragraph" data-i18n="about_p3">
+                La Fondation souhaite également encourager la solidarité entre les générations et mobiliser les Camerounais de l’intérieur comme de la diaspora autour de projets utiles aux communautés.
+              </p>
+            </div>
+
+            <!-- Contenu Onglet 2: Vision -->
+            <div class="about-tab-pane" id="tabPaneVision">
+              <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <p style="font-size: 1.15rem; font-style: italic; color: #92400e; line-height: 1.7;" data-i18n="vision_text">
+                  « Construire une communauté plus solidaire, donner aux enfants les moyens de réussir et contribuer durablement au développement de Njiyap et de ses environs. »
+                </p>
+              </div>
+              <p class="welcome-paragraph" data-i18n="about_p2">
+                Elle a pour ambition de contribuer au développement humain et communautaire à travers des actions concrètes dans les domaines de l’éducation, de la santé, de la solidarité, de l’accès à l’eau et de l’accompagnement des populations.
+              </p>
+            </div>
+
             <a href="#actions" class="btn-about-pill">
               <span data-i18n="btn_discover_actions">Découvrir nos actions →</span>
             </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         BARRE D'IMPACT ET CHIFFRES CLÉS (STYLE CHARIUS & GAINLOVE)
+         ======================================================================== -->
+    <section class="impact-counters-bar">
+      <div class="container">
+        <div class="impact-counters-grid-4">
+          
+          <div class="impact-counter-card">
+            <div class="impact-counter-icon">🎒</div>
+            <div>
+              <div class="impact-counter-number">1 000+</div>
+              <div class="impact-counter-label">Kits & Fournitures Scolaires</div>
+            </div>
+          </div>
+
+          <div class="impact-counter-card">
+            <div class="impact-counter-icon">🏥</div>
+            <div>
+              <div class="impact-counter-number">5+</div>
+              <div class="impact-counter-label">Campagnes Médicales & Soins</div>
+            </div>
+          </div>
+
+          <div class="impact-counter-card">
+            <div class="impact-counter-icon">💧</div>
+            <div>
+              <div class="impact-counter-number">100%</div>
+              <div class="impact-counter-label">Accès à l'Eau & Infrastructures</div>
+            </div>
+          </div>
+
+          <div class="impact-counter-card">
+            <div class="impact-counter-icon">🤝</div>
+            <div>
+              <div class="impact-counter-number">2025–2026</div>
+              <div class="impact-counter-label">Édition Active à Njiyap</div>
+            </div>
           </div>
 
         </div>
@@ -403,7 +480,7 @@
     </section>
 
     <!-- ========================================================================
-         4. NOS PROJETS (FICHE PROJET PHARE)
+         4. NOS PROJETS (FICHE PROJET PHARE AVEC JAUGE DE PROGRESSION)
          ======================================================================== -->
     <section class="projects-section" id="projets">
       <div class="container">
@@ -426,6 +503,17 @@
             <p class="projects-featured-desc" data-i18n="project_desc_custom">
               Première édition de distribution de kits scolaires et de chaussures aux enfants de <strong>Njiyap</strong> et des localités environnantes.
             </p>
+
+            <!-- Barre de progression moderne (Charius / Gainlove Style) -->
+            <div class="project-progress-wrap">
+              <div class="project-progress-labels">
+                <span>Distribution & Mobilisation</span>
+                <strong>100% En Cours</strong>
+              </div>
+              <div class="project-progress-bar-bg">
+                <div class="project-progress-bar-fill"></div>
+              </div>
+            </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; font-size: 0.9rem;">
               <div>
@@ -569,6 +657,38 @@
             <img src="assets/images/partner_hands.jpg" alt="Partenariat et solidarité" style="width: 100%; height: 320px; object-fit: cover;">
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         BANDE VISUELLE COMMUNAUTAIRE (GALERIE PHOTOS DE TERRAIN — STYLE CHARIUS)
+         ======================================================================== -->
+    <section class="community-gallery-section">
+      <div class="gallery-strip-grid">
+        <div class="gallery-strip-item">
+          <img src="assets/images/hero.jpg" alt="Enfants de Njiyap">
+          <div class="gallery-strip-overlay">❤️</div>
+        </div>
+        <div class="gallery-strip-item">
+          <img src="assets/images/action_education.jpg" alt="Distribution de kits scolaires">
+          <div class="gallery-strip-overlay">🎒</div>
+        </div>
+        <div class="gallery-strip-item">
+          <img src="assets/images/action_water.jpg" alt="Accès à l'eau potable">
+          <div class="gallery-strip-overlay">💧</div>
+        </div>
+        <div class="gallery-strip-item">
+          <img src="assets/images/action_health.jpg" alt="Santé communautaire">
+          <div class="gallery-strip-overlay">🏥</div>
+        </div>
+        <div class="gallery-strip-item">
+          <img src="assets/images/action_youth.jpg" alt="Jeunesse camerounaise">
+          <div class="gallery-strip-overlay">🌱</div>
+        </div>
+        <div class="gallery-strip-item">
+          <img src="assets/images/njiyap_about.jpg" alt="Solidarité à Njiyap">
+          <div class="gallery-strip-overlay">🤝</div>
         </div>
       </div>
     </section>
