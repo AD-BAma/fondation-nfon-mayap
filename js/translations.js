@@ -40,15 +40,18 @@ const translations = {
 
     promo_banner_title: "Organisation à vocation sociale, humanitaire et communautaire — Njiyap, Foumban",
 
-    // 5 Priorités Stratégiques
-    prio_1_title: "Éducation",
-    prio_1_desc: "Soutenir les enfants et favoriser leur réussite scolaire.",
-    prio_2_title: "Santé",
-    prio_2_desc: "Faciliter l’accès aux soins et soutenir les populations vulnérables.",
+    // 3 Cartes Majeures (Ollo Style)
+    prio_1_title: "Éducation & Scolarité",
+    prio_1_sub: "Réussite scolaire des enfants",
+    prio_1_desc: "Distribution de fournitures scolaires, cahiers, chaussures et accompagnement des écoliers de Njiyap.",
+    prio_2_title: "Santé & Eau Potable",
+    prio_2_sub: "Soins et accès aux infrastructures",
+    prio_2_desc: "Organisation de campagnes médicales, médicaments et soutien à l'accès à l'eau potable pour les familles.",
     prio_3_title: "Eau & Développement",
     prio_3_desc: "Contribuer à l’accès à l’eau et aux infrastructures essentielles.",
-    prio_4_title: "Solidarité",
-    prio_4_desc: "Accompagner les familles et les personnes en situation de vulnérabilité.",
+    prio_4_title: "Solidarité & Développement",
+    prio_4_sub: "Entraide & actions durables",
+    prio_4_desc: "Accompagnement des familles vulnérables, transmission intergénérationnelle et initiatives communautaires pérennes.",
     prio_5_title: "Développement",
     prio_5_desc: "Soutenir des initiatives durables au bénéfice des communautés.",
 
@@ -197,15 +200,18 @@ const translations = {
 
     promo_banner_title: "A social, humanitarian, and community organization — Njiyap, Foumban",
 
-    // 5 Strategic Priorities
-    prio_1_title: "Education",
-    prio_1_desc: "Supporting children and fostering their academic success.",
-    prio_2_title: "Healthcare",
-    prio_2_desc: "Facilitating healthcare access and supporting vulnerable populations.",
+    // 3 Major Feature Cards (Ollo Style)
+    prio_1_title: "Education & Schooling",
+    prio_1_sub: "Children's academic success",
+    prio_1_desc: "Distribution of school kits, exercise books, shoes, and mentoring for schoolchildren in Njiyap.",
+    prio_2_title: "Healthcare & Clean Water",
+    prio_2_sub: "Medical care and essential infrastructure",
+    prio_2_desc: "Organizing medical checkups, providing medication, and supporting drinking water access for families.",
     prio_3_title: "Water & Development",
     prio_3_desc: "Contributing to clean water access and vital infrastructure.",
-    prio_4_title: "Solidarity",
-    prio_4_desc: "Standing by families and vulnerable individuals.",
+    prio_4_title: "Solidarity & Development",
+    prio_4_sub: "Mutual aid & sustainable initiatives",
+    prio_4_desc: "Assisting vulnerable families, fostering intergenerational heritage, and driving local community empowerment.",
     prio_5_title: "Community Development",
     prio_5_desc: "Supporting sustainable initiatives for the benefit of local communities.",
 
