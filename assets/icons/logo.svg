@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
   <defs>
     <linearGradient id="leopardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="50%" stop-color="#eab308" />
-      <stop offset="100%" stop-color="#ca8a04" />
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
     </linearGradient>
     <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#047857" />
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
     </linearGradient>
     <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15" />
@@ -15,15 +15,15 @@
   </defs>
 
   <!-- Background Shield Glow -->
-  <path d="M50 4 C68 4 86 16 86 38 C86 64 50 94 50 94 C50 94 14 64 14 38 C14 16 32 4 50 4 Z" fill="#ffffff" stroke="#0d5c3a" stroke-width="2.5" filter="url(#shadow)" />
+  <path d="M50 4 C68 4 86 16 86 38 C86 64 50 94 50 94 C50 94 14 64 14 38 C14 16 32 4 50 4 Z" fill="#ffffff" stroke="#2563eb" stroke-width="2.5" filter="url(#shadow)" />
   
   <!-- Leopard Head Shape -->
   <g transform="translate(0, -3)">
     <!-- Ears -->
-    <path d="M30 22 C26 15 34 11 39 18 Z" fill="#ca8a04" stroke="#1f2937" stroke-width="1.5" />
-    <path d="M70 22 C74 15 66 11 61 18 Z" fill="#ca8a04" stroke="#1f2937" stroke-width="1.5" />
-    <path d="M32 20 C29 16 34 14 37 18 Z" fill="#fef08a" />
-    <path d="M68 20 C71 16 66 14 63 18 Z" fill="#fef08a" />
+    <path d="M30 22 C26 15 34 11 39 18 Z" fill="#1d4ed8" stroke="#1f2937" stroke-width="1.5" />
+    <path d="M70 22 C74 15 66 11 61 18 Z" fill="#1d4ed8" stroke="#1f2937" stroke-width="1.5" />
+    <path d="M32 20 C29 16 34 14 37 18 Z" fill="#93c5fd" />
+    <path d="M68 20 C71 16 66 14 63 18 Z" fill="#93c5fd" />
 
     <!-- Head Base -->
     <path d="M32 24 C22 36 24 50 33 58 C40 64 45 68 50 68 C55 68 60 64 67 58 C76 50 78 36 68 24 C60 19 40 19 32 24 Z" fill="url(#leopardGrad)" stroke="#111827" stroke-width="1.8" />

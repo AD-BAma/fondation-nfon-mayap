@@ -23,9 +23,9 @@
 
   /* Secondary Accents */
   --accent-cyan: #0ea5e9;
+  --accent-sky: #38bdf8;
   --accent-emerald: #10b981;
   --accent-rose: #f43f5e;
-  --accent-amber: #f59e0b;
 
   /* Theme Backgrounds */
   --bg-page: #f8fafc;
@@ -308,14 +308,14 @@ button {
   left: 0;
   width: 0%;
   height: 2.5px;
-  background: #f59e0b;
+  background: var(--accent-blue);
   transition: var(--transition);
   border-radius: 2px;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #f59e0b;
+  color: var(--accent-blue);
 }
 
 .nav-link:hover::after,
@@ -507,7 +507,7 @@ button {
 
 .hero-main-title span {
   font-style: normal;
-  color: #fef08a;
+  color: #93c5fd;
   display: block;
   font-size: 0.62em;
   font-weight: 700;
@@ -556,9 +556,9 @@ button {
   }
 }
 
-/* Rounded Pill CTA Buttons (Ollo Reference Style) */
+/* Rounded Pill CTA Buttons (Pure Confidence Blue Theme) */
 .btn-hero-solid-pill {
-  background: #f59e0b;
+  background: var(--accent-blue);
   color: #ffffff;
   font-family: var(--font-heading);
   font-size: 1.02rem;
@@ -568,20 +568,20 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
   transition: var(--transition);
 }
 
 .btn-hero-solid-pill:hover {
-  background: #d97706;
+  background: var(--accent-blue-hover);
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(245, 158, 11, 0.55);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.55);
 }
 
 .btn-hero-outline-pill {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(37, 99, 235, 0.15);
   color: #ffffff;
-  border: 2px solid #f59e0b;
+  border: 2px solid var(--accent-blue);
   backdrop-filter: blur(8px);
   font-family: var(--font-heading);
   font-size: 1.02rem;
@@ -595,11 +595,11 @@ button {
 }
 
 .btn-hero-outline-pill:hover {
-  background: #f59e0b;
+  background: var(--accent-blue);
   color: #ffffff;
-  border-color: #f59e0b;
+  border-color: var(--accent-blue);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
 }
 
 .btn-hero-white-outline {
@@ -647,9 +647,9 @@ button {
 }
 
 .hero-nav-arrow:hover {
-  background: #f59e0b;
-  border-color: #f59e0b;
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.6);
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
   transform: translateY(-50%) scale(1.08);
 }
 
@@ -692,21 +692,21 @@ button {
 }
 
 .hero-dot.active {
-  background: #f59e0b;
+  background: var(--accent-blue);
   width: 32px;
-  box-shadow: 0 0 14px rgba(245, 158, 11, 0.8);
+  box-shadow: 0 0 14px rgba(37, 99, 235, 0.8);
 }
 
 /* ==========================================================================
-   VIBRANT YELLOW / GOLD CHARITY BANNER (OLLO THEME STRIP)
+   VIBRANT CONFIDENCE BLUE CHARITY BANNER (PURE BLUE)
    ========================================================================== */
 .promo-ribbon-bar {
-  background: #f59e0b;
+  background: var(--accent-blue);
   color: #ffffff;
   padding: 34px 0 75px; /* Extra bottom padding for overlapping cards */
   position: relative;
   z-index: 5;
-  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.25);
 }
 
 .promo-ribbon-title {
@@ -720,12 +720,12 @@ button {
 }
 
 /* ==========================================================================
-   3 OVERLAPPING FEATURE CARDS (OLLO 3-COLUMN CARDS)
+   3 OVERLAPPING FEATURE CARDS (CONFIDENCE BLUE THEME)
    ========================================================================== */
 .overlap-features-section {
   position: relative;
   z-index: 10;
-  margin-top: -55px; /* Overlaps the yellow banner above */
+  margin-top: -55px; /* Overlaps the blue banner above */
   padding-bottom: 80px;
 }
 
@@ -751,16 +751,16 @@ button {
 
 .feature-overlap-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 25px 50px -12px rgba(245, 158, 11, 0.25);
-  border-color: #f59e0b;
+  box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.25);
+  border-color: var(--accent-blue);
 }
 
 .feature-card-icon-wrap {
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background: #fef3c7;
-  color: #d97706;
+  background: #eff6ff;
+  color: var(--accent-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -770,7 +770,7 @@ button {
 }
 
 .feature-overlap-card:hover .feature-card-icon-wrap {
-  background: #f59e0b;
+  background: var(--accent-blue);
   color: #ffffff;
   transform: scale(1.1);
 }
@@ -799,7 +799,7 @@ button {
 }
 
 /* ==========================================================================
-   WELCOME / ABOUT SECTION (OLLO 2-COLUMN WELCOME)
+   WELCOME / ABOUT SECTION (CONFIDENCE BLUE THEME)
    ========================================================================== */
 .welcome-about-section {
   padding: 90px 0;
@@ -840,11 +840,11 @@ button {
   margin-bottom: 24px;
   position: relative;
   padding-left: 18px;
-  border-left: 4px solid #f59e0b;
+  border-left: 4px solid var(--accent-blue);
 }
 
 .welcome-heading-title strong {
-  color: #f59e0b;
+  color: var(--accent-blue);
 }
 
 .welcome-paragraph {
@@ -855,7 +855,7 @@ button {
 }
 
 .btn-about-pill {
-  background: #f59e0b;
+  background: var(--accent-blue);
   color: #ffffff;
   font-family: var(--font-heading);
   font-size: 0.96rem;
@@ -867,14 +867,14 @@ button {
   gap: 8px;
   align-self: flex-start;
   margin-top: 10px;
-  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.35);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
   transition: var(--transition);
 }
 
 .btn-about-pill:hover {
-  background: #d97706;
+  background: var(--accent-blue-hover);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.5);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.5);
 }
 
 /* ==========================================================================
@@ -988,16 +988,16 @@ button {
 }
 
 .about-tab-btn:hover {
-  background: #fef3c7;
-  color: #b45309;
-  border-color: #f59e0b;
+  background: #eff6ff;
+  color: var(--accent-blue-dark);
+  border-color: var(--accent-blue);
 }
 
 .about-tab-btn.active {
-  background: #f59e0b;
+  background: var(--accent-blue);
   color: #ffffff;
-  border-color: #f59e0b;
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  border-color: var(--accent-blue);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
 }
 
 .about-tab-pane {
@@ -1052,7 +1052,7 @@ button {
 
 .welcome-photo-badge-sub {
   font-size: 0.78rem;
-  color: #fef08a;
+  color: #93c5fd;
 }
 
 /* ==========================================================================
@@ -1085,16 +1085,16 @@ button {
 .impact-counter-card:hover {
   transform: translateY(-3px);
   background: #ffffff;
-  border-color: #f59e0b;
-  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.15);
+  border-color: var(--accent-blue);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
 }
 
 .impact-counter-icon {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: #fef3c7;
-  color: #d97706;
+  background: #eff6ff;
+  color: var(--accent-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1161,8 +1161,8 @@ button {
 
 .project-tag-badge {
   display: inline-block;
-  background: #fef3c7;
-  color: #b45309;
+  background: #eff6ff;
+  color: var(--accent-blue-dark);
   font-family: var(--font-heading);
   font-size: 0.82rem;
   font-weight: 800;
@@ -1187,7 +1187,7 @@ button {
 .project-progress-bar-fill {
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #f59e0b, #d97706);
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
   border-radius: var(--radius-full);
 }
 
@@ -1200,7 +1200,7 @@ button {
 }
 
 .project-progress-labels strong {
-  color: #d97706;
+  color: var(--accent-blue);
 }
 
 .projects-featured-title {
