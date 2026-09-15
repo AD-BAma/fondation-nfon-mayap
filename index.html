@@ -28,7 +28,7 @@
 <body>
 
   <!-- ========================================================================
-       TOP UTILITY BAR (PRIVA MODERN STYLE)
+       TOP UTILITY BAR
        ======================================================================== -->
   <div class="top-announcement-bar">
     <div class="container top-bar-inner">
@@ -57,7 +57,7 @@
   </div>
 
   <!-- ========================================================================
-       STICKY NAVBAR
+       STICKY NAVBAR (LOGO FAR LEFT, BIG GAP TO MENU ON RIGHT)
        ======================================================================== -->
   <header class="site-header" id="siteHeader">
     <div class="container navbar">
@@ -76,8 +76,9 @@
         <ul class="nav-menu" id="navMenu">
           <li><a href="#accueil" class="nav-link active" data-i18n="nav_home">Accueil</a></li>
           <li><a href="#qui-sommes-nous" class="nav-link" data-i18n="nav_about">À propos</a></li>
-          <li><a href="#actions" class="nav-link" data-i18n="nav_actions">Actions</a></li>
-          <li><a href="#projets" class="nav-link" data-i18n="nav_projects">Projets</a></li>
+          <li><a href="#actions" class="nav-link" data-i18n="nav_actions">Nos Actions</a></li>
+          <li><a href="#projets" class="nav-link" data-i18n="nav_projects">Nos Projets</a></li>
+          <li><a href="#vision-valeurs" class="nav-link" data-i18n="nav_values">Vision & Valeurs</a></li>
           <li><a href="#partenaires" class="nav-link" data-i18n="nav_partners">Partenaires</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
         </ul>
@@ -116,13 +117,12 @@
 
   <main>
     <!-- ========================================================================
-         HERO SECTION (OLLO CHARITY 3-SLIDE DYNAMIC ANIMATED CAROUSEL)
+         1. HERO SECTION (CARROUSEL ANIMÉ 3 SLIDES)
          ======================================================================== -->
     <section class="hero-section" id="accueil">
-      <!-- Slides Container -->
       <div class="hero-slider-container" id="heroSlider">
         
-        <!-- Slide 1: Éducation & Scolarité -->
+        <!-- Slide 1: Éducation -->
         <div class="hero-slide active" data-slide="0">
           <div class="hero-bg-wrapper">
             <img src="assets/images/hero.jpg" alt="Éducation et scolarité à Njiyap" class="hero-bg-img">
@@ -130,25 +130,25 @@
           </div>
           <div class="container hero-content">
             <h1 class="hero-main-title" data-i18n="hero_title_1">
-              Chaque Geste Fait Une Grande Différence
-              <span data-i18n="hero_sub_1">« Servir, transmettre et construire pour les générations futures »</span>
+              FONDATION NFON MAYAP
+              <span data-i18n="hero_sub_1">Au service des communautés, de l’éducation et du développement</span>
             </h1>
             <p class="hero-lead-text" data-i18n="hero_desc_1">
-              Offrons aux enfants de Njiyap les fournitures, l'encadrement et les bourses scolaires nécessaires pour réussir leur avenir.
+              La Fondation Nfon Mayap œuvre pour améliorer les conditions de vie des populations et accompagner les enfants, les familles et les communautés dans leur développement.
             </p>
             <div class="hero-buttons-row">
               <a href="#contact" class="btn-hero-outline-pill">
                 <span data-i18n="hero_btn_volunteer">Devenir Bénévole</span>
               </a>
               <a href="#partenaires" class="btn-hero-solid-pill trigger-support-modal">
-                <span data-i18n="hero_btn_donate">Faire un Don</span>
+                <span data-i18n="hero_btn_support">Soutenir nos actions</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Slide 2: Eau Potable & Forages -->
+        <!-- Slide 2: Eau Potable -->
         <div class="hero-slide" data-slide="1">
           <div class="hero-bg-wrapper">
             <img src="assets/images/action_water.jpg" alt="Accès à l'eau potable à Njiyap" class="hero-bg-img">
@@ -156,44 +156,44 @@
           </div>
           <div class="container hero-content">
             <h1 class="hero-main-title" data-i18n="hero_title_2">
-              L'Accès à l'Eau Potable, Source de Vie
-              <span data-i18n="hero_sub_2">« Des forages modernes et durables pour nos villages »</span>
+              Eau & Infrastructures Essentielles
+              <span data-i18n="hero_sub_2">« Contribuer à l'accès à l'eau potable et préserver la santé »</span>
             </h1>
             <p class="hero-lead-text" data-i18n="hero_desc_2">
-              Garantir une eau saine et accessible pour préserver la santé, l'hygiène et la dignité de nos familles au cœur du Noun.
+              Soutien aux initiatives et forages hydrauliques modernes pour garantir l'autonomie, l'hygiène et la dignité des familles de Njiyap.
             </p>
             <div class="hero-buttons-row">
               <a href="#projets" class="btn-hero-outline-pill">
-                <span data-i18n="hero_btn_see_water">Voir le Projet Eau</span>
+                <span data-i18n="hero_btn_see_water">Voir nos Projets</span>
               </a>
               <a href="#partenaires" class="btn-hero-solid-pill trigger-support-modal">
-                <span data-i18n="hero_btn_support_water">Soutenir le Forage</span>
+                <span data-i18n="hero_btn_support_water">Soutenir nos actions</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Slide 3: Santé & Solidarité -->
+        <!-- Slide 3: Solidarité & Santé -->
         <div class="hero-slide" data-slide="2">
           <div class="hero-bg-wrapper">
-            <img src="assets/images/action_health.jpg" alt="Campagnes de santé et solidarité" class="hero-bg-img">
+            <img src="assets/images/action_health.jpg" alt="Santé et Solidarité à Njiyap" class="hero-bg-img">
             <div class="hero-overlay"></div>
           </div>
           <div class="container hero-content">
             <h1 class="hero-main-title" data-i18n="hero_title_3">
-              Solidarité Active & Soins de Santé
-              <span data-i18n="hero_sub_3">« Prendre soin des familles et des plus vulnérables »</span>
+              Santé & Solidarité Active
+              <span data-i18n="hero_sub_3">« Accompagner les familles et les personnes en situation de vulnérabilité »</span>
             </h1>
             <p class="hero-lead-text" data-i18n="hero_desc_3">
-              Consultations médicales gratuites, médicaments essentiels et accompagnement social direct pour les populations de Njiyap.
+              Organisation de campagnes médicales, approvisionnement en soins et écoute active pour bâtir une communauté forte et solidaire.
             </p>
             <div class="hero-buttons-row">
-              <a href="#qui-sommes-nous" class="btn-hero-outline-pill">
+              <a href="#actions" class="btn-hero-outline-pill">
                 <span data-i18n="hero_btn_discover_actions">Découvrir nos Actions</span>
               </a>
               <a href="#partenaires" class="btn-hero-solid-pill trigger-support-modal">
-                <span data-i18n="hero_btn_join_movement">Rejoindre la Dynamique</span>
+                <span data-i18n="hero_btn_join_movement">Soutenir nos actions</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
             </div>
@@ -215,7 +215,7 @@
     </section>
 
     <!-- ========================================================================
-         CONFIDENCE BLUE TRUST BANNER (OLLO THEME STRIP)
+         BANDEAU BLEU DE CONFIANCE
          ======================================================================== -->
     <div class="promo-ribbon-bar">
       <div class="container">
@@ -226,45 +226,54 @@
     </div>
 
     <!-- ========================================================================
-         3 OVERLAPPING WHITE FEATURE CARDS (OLLO 3-COLUMN CARDS)
+         NOS PRIORITÉS STRATÉGIQUES (5 PILIERS)
          ======================================================================== -->
-    <section class="overlap-features-section" id="actions">
+    <section class="overlap-features-section">
       <div class="container">
-        <div class="overlap-cards-grid">
+        <div class="overlap-cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
           
-          <!-- Card 1: Donation -->
-          <div class="feature-overlap-card trigger-support-modal">
-            <div class="feature-card-icon-wrap">
-              🎁
-            </div>
-            <h3 class="feature-card-title" data-i18n="feat_card1_title">Dons & Soutien</h3>
-            <span class="feature-card-subtitle" data-i18n="feat_card1_sub">Agir pour les enfants et familles vulnérables</span>
-            <p class="feature-card-desc" data-i18n="feat_card1_desc">
-              Chaque contribution permet d'équiper des écoliers, de financer des soins médicaux et d'accompagner les familles de Njiyap.
-            </p>
-          </div>
-
-          <!-- Card 2: Education & Water -->
+          <!-- Priorité 1: Éducation -->
           <div class="feature-overlap-card trigger-project-modal">
-            <div class="feature-card-icon-wrap">
-              🎓
-            </div>
-            <h3 class="feature-card-title" data-i18n="feat_card2_title">Éducation & Eau</h3>
-            <span class="feature-card-subtitle" data-i18n="feat_card2_sub">Infrastructures et bourses d'avenir</span>
-            <p class="feature-card-desc" data-i18n="feat_card2_desc">
-              Forages hydrauliques modernes et kits scolaires pour garantir l'autonomie, l'hygiène et l'épanouissement des jeunes.
+            <div class="feature-card-icon-wrap">🎓</div>
+            <h3 class="feature-card-title" data-i18n="prio_1_title">Éducation</h3>
+            <p class="feature-card-desc" data-i18n="prio_1_desc">
+              Soutenir les enfants et favoriser leur réussite scolaire.
             </p>
           </div>
 
-          <!-- Card 3: Volunteer -->
+          <!-- Priorité 2: Santé -->
           <div class="feature-overlap-card trigger-support-modal">
-            <div class="feature-card-icon-wrap">
-              🤝
-            </div>
-            <h3 class="feature-card-title" data-i18n="feat_card3_title">Bénévolat & Partenariat</h3>
-            <span class="feature-card-subtitle" data-i18n="feat_card3_sub">Unir nos forces et compétences</span>
-            <p class="feature-card-desc" data-i18n="feat_card3_desc">
-              Rejoignez notre équipe de bénévoles et nos partenaires engagés pour co-construire des projets à fort impact.
+            <div class="feature-card-icon-wrap">🏥</div>
+            <h3 class="feature-card-title" data-i18n="prio_2_title">Santé</h3>
+            <p class="feature-card-desc" data-i18n="prio_2_desc">
+              Faciliter l’accès aux soins et soutenir les populations vulnérables.
+            </p>
+          </div>
+
+          <!-- Priorité 3: Eau -->
+          <div class="feature-overlap-card trigger-support-modal">
+            <div class="feature-card-icon-wrap">💧</div>
+            <h3 class="feature-card-title" data-i18n="prio_3_title">Eau & Développement</h3>
+            <p class="feature-card-desc" data-i18n="prio_3_desc">
+              Contribuer à l’accès à l’eau et aux infrastructures essentielles.
+            </p>
+          </div>
+
+          <!-- Priorité 4: Solidarité -->
+          <div class="feature-overlap-card trigger-support-modal">
+            <div class="feature-card-icon-wrap">🤝</div>
+            <h3 class="feature-card-title" data-i18n="prio_4_title">Solidarité</h3>
+            <p class="feature-card-desc" data-i18n="prio_4_desc">
+              Accompagner les familles et les personnes en situation de vulnérabilité.
+            </p>
+          </div>
+
+          <!-- Priorité 5: Développement Communautaire -->
+          <div class="feature-overlap-card trigger-support-modal">
+            <div class="feature-card-icon-wrap">🌱</div>
+            <h3 class="feature-card-title" data-i18n="prio_5_title">Développement</h3>
+            <p class="feature-card-desc" data-i18n="prio_5_desc">
+              Soutenir des initiatives durables au bénéfice des communautés.
             </p>
           </div>
 
@@ -273,31 +282,34 @@
     </section>
 
     <!-- ========================================================================
-         WELCOME / ABOUT SECTION (OLLO 2-COLUMN WELCOME)
+         2. QUI SOMMES-NOUS ? (SECTION À PROPOS)
          ======================================================================== -->
     <section class="welcome-about-section" id="qui-sommes-nous">
       <div class="container">
         <div class="welcome-about-grid">
           
-          <!-- Left: Photo with curved corners -->
+          <!-- Photo gauche -->
           <div class="welcome-photo-wrap">
-            <img src="assets/images/njiyap_about.jpg" alt="Communauté et jeunes de Njiyap">
+            <img src="assets/images/njiyap_about.jpg" alt="Fondation Nfon Mayap à Njiyap">
           </div>
 
-          <!-- Right: Text & CTA -->
+          <!-- Texte droite -->
           <div class="welcome-about-content">
-            <span class="section-badge-blue" data-i18n="about_badge">À PROPOS DE NOUS</span>
-            <h2 class="welcome-heading-title" data-i18n="welcome_ollo_title">
-              Bienvenue à la <strong>Fondation Nfon Mayap</strong>
+            <span class="section-badge-blue" data-i18n="about_badge">QUI SOMMES-NOUS ?</span>
+            <h2 class="welcome-heading-title" data-i18n="about_title">
+              À propos de la <strong>Fondation Nfon Mayap</strong>
             </h2>
-            <p class="welcome-paragraph" data-i18n="welcome_ollo_p1">
-              Implantée au cœur de Njiyap – Foumban, notre fondation est une organisation à vocation sociale, humanitaire et communautaire dédiée à l'épanouissement des générations futures.
+            <p class="welcome-paragraph" data-i18n="about_p1">
+              La <strong>Fondation Nfon Mayap</strong> est une initiative à vocation sociale et humanitaire implantée à <strong>Njiyap</strong>, dans le département du Noun, au Cameroun.
             </p>
-            <p class="welcome-paragraph" data-i18n="welcome_ollo_p2">
-              Notre équipe et nos partenaires mobilisent leurs expertises et leurs ressources pour apporter des réponses concrètes et durables aux défis éducatifs, sanitaires et d'accès à l'eau potable dans le département du Noun.
+            <p class="welcome-paragraph" data-i18n="about_p2">
+              Elle a pour ambition de contribuer au développement humain et communautaire à travers des actions concrètes dans les domaines de l’éducation, de la santé, de la solidarité, de l’accès à l’eau et de l’accompagnement des populations.
             </p>
-            <a href="#projets" class="btn-about-pill">
-              <span data-i18n="btn_more_about">En savoir plus →</span>
+            <p class="welcome-paragraph" data-i18n="about_p3">
+              La Fondation souhaite également encourager la solidarité entre les générations et mobiliser les Camerounais de l’intérieur comme de la diaspora autour de projets utiles aux communautés.
+            </p>
+            <a href="#actions" class="btn-about-pill">
+              <span data-i18n="btn_discover_actions">Découvrir nos actions →</span>
             </a>
           </div>
 
@@ -306,361 +318,378 @@
     </section>
 
     <!-- ========================================================================
-         SPLIT FEATURE & STORY SECTION ("WITH PRIVA..." STYLE)
+         3. NOS ACTIONS (LES 5 AXES MAJEURS)
          ======================================================================== -->
-    <section class="feature-story-section" id="qui-sommes-nous">
+    <section class="welcome-about-section" id="actions" style="background: var(--bg-page); border-top: 1px solid var(--border-subtle);">
       <div class="container">
-        <div class="feature-story-grid">
+        
+        <div class="text-center" style="max-width: 800px; margin: 0 auto 50px;">
+          <span class="section-badge-blue" data-i18n="actions_badge">NOTRE ENGAGEMENT SUR LE TERRAIN</span>
+          <h2 class="stats-heading-title" data-i18n="actions_main_title">Nos Actions</h2>
+          <p class="stats-subtext" data-i18n="actions_main_desc">
+            Des initiatives concrètes et mesurables pour répondre aux besoins fondamentaux des populations de Njiyap et du département du Noun.
+          </p>
+        </div>
+
+        <div class="actions-five-grid">
           
-          <!-- Left: Large Rounded Photo with Tag -->
-          <div class="feature-story-image-wrap">
-            <img src="assets/images/njiyap_about.jpg" alt="Communauté et collines de Njiyap">
-            <div class="feature-image-badge">
-              <strong data-i18n="story_badge_title">📍 Njiyap – Foumban, Cameroun</strong>
-              <span data-i18n="story_badge_sub">Département du Noun, Région de l'Ouest</span>
+          <!-- Action 1: Éducation -->
+          <div class="action-pillar-card trigger-project-modal">
+            <div class="action-card-img-wrap">
+              <img src="assets/images/action_education.jpg" alt="Distribution de fournitures scolaires">
+            </div>
+            <div class="action-card-content">
+              <div class="action-card-icon-title">
+                <span class="action-card-icon">🎒</span>
+                <h3 class="action-card-title" data-i18n="act_1_title">Éducation</h3>
+              </div>
+              <p class="action-card-desc" data-i18n="act_1_desc">
+                Distribution de fournitures scolaires, cahiers, chaussures et autres équipements aux enfants.
+              </p>
             </div>
           </div>
 
-          <!-- Right: Narrative, Pill Tabs & Bullets -->
-          <div class="feature-story-content">
-            <span class="section-badge-yellow" data-i18n="story_sup">NOTRE ENGAGEMENT</span>
-            <h2 class="feature-main-heading" data-i18n="story_title">
-              Un impact direct et mesurable au service de l'humain
-            </h2>
-
-            <!-- Pill Tabs -->
-            <div class="feature-pills-row">
-              <button class="feature-pill-btn active" data-pill="transparence" data-i18n="pill_transparency">Transparence 100%</button>
-              <button class="feature-pill-btn" data-pill="local" data-i18n="pill_local">Actions Locales</button>
-              <button class="feature-pill-btn" data-pill="perennite" data-i18n="pill_durability">Pérennité</button>
-              <button class="feature-pill-btn" data-pill="solidarite" data-i18n="pill_solidarity">Solidarité Active</button>
+          <!-- Action 2: Santé -->
+          <div class="action-pillar-card trigger-support-modal">
+            <div class="action-card-img-wrap">
+              <img src="assets/images/action_health.jpg" alt="Campagnes de consultations médicales">
             </div>
+            <div class="action-card-content">
+              <div class="action-card-icon-title">
+                <span class="action-card-icon">🏥</span>
+                <h3 class="action-card-title" data-i18n="act_2_title">Santé</h3>
+              </div>
+              <p class="action-card-desc" data-i18n="act_2_desc">
+                Organisation de campagnes de consultations médicales et mise à disposition de médicaments pour les populations qui en ont besoin.
+              </p>
+            </div>
+          </div>
 
-            <p class="feature-story-paragraph" data-i18n="story_p1">
-              La <strong>Fondation Nfon Mayap</strong> est une initiative à vocation sociale et humanitaire. Elle a pour ambition de contribuer au développement humain et communautaire à travers des actions concrètes dans les domaines de l'éducation, de la santé, de l'accès à l'eau et de l'accompagnement des familles.
+          <!-- Action 3: Eau -->
+          <div class="action-pillar-card trigger-support-modal">
+            <div class="action-card-img-wrap">
+              <img src="assets/images/action_water.jpg" alt="Amélioration de l'accès à l'eau potable">
+            </div>
+            <div class="action-card-content">
+              <div class="action-card-icon-title">
+                <span class="action-card-icon">💧</span>
+                <h3 class="action-card-title" data-i18n="act_3_title">Eau</h3>
+              </div>
+              <p class="action-card-desc" data-i18n="act_3_desc">
+                Soutien aux initiatives permettant d’améliorer l’accès à l’eau potable dans les communautés.
+              </p>
+            </div>
+          </div>
+
+          <!-- Action 4: Solidarité -->
+          <div class="action-pillar-card trigger-support-modal">
+            <div class="action-card-img-wrap">
+              <img src="assets/images/action_solidarity.jpg" alt="Actions en faveur des familles">
+            </div>
+            <div class="action-card-content">
+              <div class="action-card-icon-title">
+                <span class="action-card-icon">❤️</span>
+                <h3 class="action-card-title" data-i18n="act_4_title">Solidarité</h3>
+              </div>
+              <p class="action-card-desc" data-i18n="act_4_desc">
+                Actions en faveur des familles et des personnes vulnérables.
+              </p>
+            </div>
+          </div>
+
+          <!-- Action 5: Jeunesse -->
+          <div class="action-pillar-card trigger-support-modal">
+            <div class="action-card-img-wrap">
+              <img src="assets/images/action_youth.jpg" alt="Accompagnement de la jeunesse">
+            </div>
+            <div class="action-card-content">
+              <div class="action-card-icon-title">
+                <span class="action-card-icon">👧🏾👦🏾</span>
+                <h3 class="action-card-title" data-i18n="act_5_title">Jeunesse</h3>
+              </div>
+              <p class="action-card-desc" data-i18n="act_5_desc">
+                Accompagnement des enfants et des jeunes, considérés comme les acteurs du Cameroun de demain.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. NOS PROJETS (FICHE PROJET PHARE)
+         ======================================================================== -->
+    <section class="projects-section" id="projets">
+      <div class="container">
+        
+        <div class="text-center" style="max-width: 800px; margin: 0 auto 50px;">
+          <span class="section-badge-blue" data-i18n="projects_badge">RÉALISATIONS SUR LE TERRAIN</span>
+          <h2 class="stats-heading-title" data-i18n="projects_main_title">Nos Projets</h2>
+          <p class="stats-subtext" data-i18n="projects_main_desc">
+            Découvrez nos programmes en cours et leurs retombées directes pour les bénéficiaires.
+          </p>
+        </div>
+
+        <div class="projects-card-featured">
+          <img src="assets/images/project_kits.jpg" alt="Projet de soutien scolaire à Njiyap" class="projects-featured-img">
+          
+          <div class="projects-featured-body">
+            <span class="project-tag-badge" data-i18n="project_badge">Première édition — En cours</span>
+            <h3 class="projects-featured-title" data-i18n="project_title_custom">Projet de soutien scolaire</h3>
+            
+            <p class="projects-featured-desc" data-i18n="project_desc_custom">
+              Première édition de distribution de kits scolaires et de chaussures aux enfants de <strong>Njiyap</strong> et des localités environnantes.
             </p>
 
-            <div class="feature-bullet-points">
-              <div class="feature-bullet-item">
-                <span class="bullet-check-icon">✓</span>
-                <span data-i18n="bullet_1">Distribution de kits scolaires complets et appui aux écoles du Noun</span>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; font-size: 0.9rem;">
+              <div>
+                <strong style="color: var(--primary);" data-i18n="project_loc_label">📍 Lieu :</strong>
+                <span style="color: var(--text-body);" data-i18n="project_loc_val">Njiyap et environs</span>
               </div>
-              <div class="feature-bullet-item">
-                <span class="bullet-check-icon">✓</span>
-                <span data-i18n="bullet_2">Organisation de consultations médicales et de soins de santé primaires</span>
+              <div>
+                <strong style="color: var(--primary);" data-i18n="project_date_label">📅 Date :</strong>
+                <span style="color: var(--text-body);" data-i18n="project_date_val">Édition 2025–2026</span>
               </div>
-              <div class="feature-bullet-item">
-                <span class="bullet-check-icon">✓</span>
-                <span data-i18n="bullet_3">Mobilisation de la diaspora et des partenaires pour des projets durables</span>
+              <div>
+                <strong style="color: var(--primary);" data-i18n="project_obj_label">🎯 Objectif :</strong>
+                <span style="color: var(--text-body);" data-i18n="project_obj_val">Équipements & bourses</span>
+              </div>
+              <div>
+                <strong style="color: var(--primary);" data-i18n="project_ben_label">👥 Bénéficiaires :</strong>
+                <span style="color: var(--text-body);" data-i18n="project_ben_val">Enfants et familles</span>
               </div>
             </div>
 
-            <div>
-              <a href="#partenaires" class="btn-spacious-gold trigger-support-modal">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <button class="btn-about-pill trigger-project-modal" style="margin-top: 0;">
+                <span data-i18n="project_btn_view">Consulter la fiche projet →</span>
+              </button>
+              <button class="btn-partner-outline trigger-support-modal" style="color: var(--primary); border-color: var(--border);">
                 <span data-i18n="hero_btn_support">Soutenir nos actions</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5 & 6. NOTRE VISION & NOS VALEURS (5 VALEURS)
+         ======================================================================== -->
+    <section class="vision-values-section" id="vision-valeurs">
+      <div class="container">
+        
+        <!-- 5. Notre Vision (Encadré mis en valeur) -->
+        <div class="vision-statement-box">
+          <span class="section-badge-blue" style="background: rgba(255, 255, 255, 0.15); color: #93c5fd; margin-bottom: 16px;" data-i18n="vision_badge">NOTRE VISION</span>
+          <h2 class="vision-quote" data-i18n="vision_text">
+            « Construire une communauté plus solidaire, donner aux enfants les moyens de réussir et contribuer durablement au développement de Njiyap et de ses environs. »
+          </h2>
+        </div>
+
+        <!-- 6. Nos Valeurs (5 Blocs) -->
+        <div class="text-center" style="margin-bottom: 40px;">
+          <span class="section-badge-blue" data-i18n="values_badge">NOTRE ADN</span>
+          <h2 class="stats-heading-title" data-i18n="values_main_title">Nos 5 Valeurs</h2>
+        </div>
+
+        <div class="values-five-grid">
+          
+          <!-- Valeur 1: Solidarité -->
+          <div class="value-box-card">
+            <div class="value-icon-circle">🤝</div>
+            <h3 class="value-title" data-i18n="val_1_title">Solidarité</h3>
+            <p class="value-desc" data-i18n="val_1_desc">
+              Être aux côtés de ceux qui en ont besoin.
+            </p>
+          </div>
+
+          <!-- Valeur 2: Humanité -->
+          <div class="value-box-card">
+            <div class="value-icon-circle">❤️</div>
+            <h3 class="value-title" data-i18n="val_2_title">Humanité</h3>
+            <p class="value-desc" data-i18n="val_2_desc">
+              Placer la dignité humaine au cœur de nos actions.
+            </p>
+          </div>
+
+          <!-- Valeur 3: Éducation -->
+          <div class="value-box-card">
+            <div class="value-icon-circle">🎓</div>
+            <h3 class="value-title" data-i18n="val_3_title">Éducation</h3>
+            <p class="value-desc" data-i18n="val_3_desc">
+              Investir dans les générations futures.
+            </p>
+          </div>
+
+          <!-- Valeur 4: Développement -->
+          <div class="value-box-card">
+            <div class="value-icon-circle">🌍</div>
+            <h3 class="value-title" data-i18n="val_4_title">Développement</h3>
+            <p class="value-desc" data-i18n="val_4_desc">
+              Favoriser des solutions concrètes et durables.
+            </p>
+          </div>
+
+          <!-- Valeur 5: Transmission -->
+          <div class="value-box-card">
+            <div class="value-icon-circle">🫱🏾🫲🏽</div>
+            <h3 class="value-title" data-i18n="val_5_title">Transmission</h3>
+            <p class="value-desc" data-i18n="val_5_desc">
+              Préserver les valeurs et construire l’avenir.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. DEVENIR PARTENAIRE (ENTREPRISES, DIASPORA & PARTICULIERS)
+         ======================================================================== -->
+    <section class="partners-section" id="partenaires">
+      <div class="container">
+        <div class="partner-cta-banner">
+          
+          <div>
+            <span class="section-badge-blue" style="background: rgba(255, 255, 255, 0.15); color: #93c5fd;" data-i18n="partner_badge">ENGAGEMENT & MÉCÉNAT</span>
+            <h2 class="partner-banner-title" data-i18n="partner_heading_title">
+              Devenir Partenaire
+            </h2>
+            <p class="partner-banner-desc" data-i18n="partner_banner_p1">
+              Une page destinée aux entreprises, associations, particuliers et membres engagés de la diaspora.
+            </p>
+            <p class="partner-banner-desc" style="margin-top: 10px; color: #ffffff; font-weight: 600;" data-i18n="partner_banner_p2">
+              Vous souhaitez soutenir la Fondation ? Votre contribution peut permettre de financer un projet éducatif, une campagne de santé, un point d’eau ou une action sociale.
+            </p>
+            
+            <div class="partner-buttons-group">
+              <button class="btn-partner-solid trigger-support-modal">
+                <span data-i18n="btn_become_partner">DEVENIR PARTENAIRE</span>
+              </button>
+              <button class="btn-partner-support trigger-support-modal">
+                <span data-i18n="hero_btn_support">SOUTENIR NOS ACTIONS</span>
+              </button>
+              <a href="#contact" class="btn-partner-outline">
+                <span data-i18n="btn_contact_us">NOUS CONTACTER</span>
               </a>
             </div>
-
           </div>
+
+          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl);">
+            <img src="assets/images/partner_hands.jpg" alt="Partenariat et solidarité" style="width: 100%; height: 320px; object-fit: cover;">
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- ========================================================================
-         IMPACT STATS / METRICS COUNTER GRID ("WHAT WE DID?" STYLE)
+         8. CONTACT & FOOTER
          ======================================================================== -->
-    <section class="impact-stats-section">
+    <footer class="footer-contact-section" id="contact">
       <div class="container">
-        <div class="impact-stats-grid">
+        <div class="footer-grid-layout">
           
-          <!-- Left Info -->
-          <div class="impact-stats-left">
-            <span class="section-badge-yellow" data-i18n="stats_badge">CHIFFRES CLÉS</span>
-            <h2 class="impact-stats-title" data-i18n="stats_title">Ce que nous accomplissons ensemble</h2>
-            <p class="impact-stats-desc" data-i18n="stats_desc">
-              Chaque don, partenariat et action bénévole se traduit par des résultats directs et quantifiables pour les enfants et les familles de Njiyap.
+          <!-- Infos Gauche -->
+          <div>
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+              <div class="logo-badge" style="width: 44px; height: 44px;">
+                <img src="assets/icons/logo.svg" alt="Fondation Nfon Mayap">
+              </div>
+              <div>
+                <h3 class="footer-brand-title" style="margin: 0;">FONDATION NFON MAYAP</h3>
+                <span style="font-size: 0.8rem; color: #94a3b8;" data-i18n="brand_motto">« Servir, transmettre et construire pour les générations futures »</span>
+              </div>
+            </div>
+
+            <p class="footer-brand-desc" data-i18n="footer_brand_desc">
+              Organisation à vocation sociale, humanitaire et communautaire implantée à Njiyap – Foumban, Département du Noun, Région de l'Ouest, Cameroun.
             </p>
-          </div>
 
-          <!-- Right 6 Counters -->
-          <div class="impact-counters-six-grid">
-            <div class="stat-counter-block">
-              <span class="stat-number-display" data-target="450">450+</span>
-              <span class="stat-label-text" data-i18n="stat_1_label">Enfants scolarisés & équipés</span>
-            </div>
-
-            <div class="stat-counter-block">
-              <span class="stat-number-display" data-target="1200">1.2k+</span>
-              <span class="stat-label-text" data-i18n="stat_2_label">Bénéficiaires directs</span>
-            </div>
-
-            <div class="stat-counter-block">
-              <span class="stat-number-display" data-target="100">100%</span>
-              <span class="stat-label-text" data-i18n="stat_3_label">Impact terrain direct</span>
-            </div>
-
-            <div class="stat-counter-block">
-              <span class="stat-number-display" data-target="5">5</span>
-              <span class="stat-label-text" data-i18n="stat_4_label">Piliers d'intervention</span>
-            </div>
-
-            <div class="stat-counter-block">
-              <span class="stat-number-display" data-target="10">10+</span>
-              <span class="stat-label-text" data-i18n="stat_5_label">Projets & actions menés</span>
-            </div>
-
-            <div class="stat-counter-block">
-              <span class="stat-number-display">24/7</span>
-              <span class="stat-label-text" data-i18n="stat_6_label">Solidarité continue</span>
+            <div class="footer-contact-info-list">
+              <div class="footer-contact-item">
+                <span>📍</span>
+                <span data-i18n="contact_address">Njiyap – Foumban, Cameroun</span>
+              </div>
+              <div class="footer-contact-item">
+                <span>📞</span>
+                <a href="tel:+237699993961">+237 699 993 961</a>
+              </div>
+              <div class="footer-contact-item">
+                <span>✉️</span>
+                <a href="mailto:contact@fondationnfonmayap.org">contact@fondationnfonmayap.org</a>
+              </div>
             </div>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         FOUR-CARD HIGHLIGHT BAR (DEEP NAVY BLUE WITH YELLOW ICONS)
-         ======================================================================== -->
-    <section class="highlight-bar-section">
-      <div class="container">
-        <div class="highlight-bar-four-grid">
-          
-          <!-- Card 1 -->
-          <div class="highlight-card-item">
-            <div class="highlight-icon-yellow-square">🤝</div>
-            <h3 class="highlight-card-title" data-i18n="bar_card1_title">Partenariat & Mécénat</h3>
-            <p class="highlight-card-desc" data-i18n="bar_card1_desc">Entreprises et donateurs : associez votre image à des projets humanitaires concrets et transparents à Njiyap.</p>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="highlight-card-item">
-            <div class="highlight-icon-yellow-square">🎓</div>
-            <h3 class="highlight-card-title" data-i18n="bar_card2_title">Parrainage Scolaire</h3>
-            <p class="highlight-card-desc" data-i18n="bar_card2_desc">Offrez à un enfant les kits, manuels et fournitures nécessaires pour réussir toute son année scolaire.</p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="highlight-card-item">
-            <div class="highlight-icon-yellow-square">💧</div>
-            <h3 class="highlight-card-title" data-i18n="bar_card3_title">Eau & Santé Rurale</h3>
-            <p class="highlight-card-desc" data-i18n="bar_card3_desc">Financement d'infrastructures hydrauliques et de campagnes de santé pour préserver des vies.</p>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="highlight-card-item">
-            <div class="highlight-icon-yellow-square">💬</div>
-            <h3 class="highlight-card-title" data-i18n="bar_card4_title">Conseil & Échanges</h3>
-            <p class="highlight-card-desc" data-i18n="bar_card4_desc">Une équipe à votre écoute pour concevoir ensemble des programmes sur mesure pour les populations.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         SPOTLIGHT PROJECT & PARTNERSHIP SECTION
-         ======================================================================== -->
-    <section class="projects-partnership-section" id="projets">
-      <div class="container">
-        <div class="projects-partner-container-grid">
-          
-          <!-- Spotlight Project -->
-          <div class="spotlight-project-card">
-            <div>
-              <span class="section-badge-yellow" data-i18n="projects_sup">PROJET PHARE</span>
-              <h2 class="section-main-heading" style="font-size: 2.1rem; color: var(--primary); margin-bottom: 14px;" data-i18n="projects_title">Projet de soutien scolaire</h2>
+          <!-- Formulaire Droite (Supabase Connected) -->
+          <div class="footer-form-wrapper">
+            <h3 class="footer-form-title" data-i18n="contact_form_title">Écrire à la Fondation</h3>
+            
+            <form id="contactForm">
+              <input type="text" id="contactName" class="footer-input-field" placeholder="Nom et prénom *" required data-i18n-ph="form_name_ph">
+              <input type="email" id="contactEmail" class="footer-input-field" placeholder="Email *" required data-i18n-ph="form_email_ph">
+              <input type="tel" id="contactPhone" class="footer-input-field" placeholder="Téléphone / WhatsApp *" data-i18n-ph="form_phone_ph">
               
-              <div class="project-hero-photo-wrap">
-                <img src="assets/images/project_kits.jpg" alt="Distribution de kits scolaires à Njiyap">
-                <span class="project-badge-tag" data-i18n="project_badge">Première édition — En cours</span>
+              <input type="text" id="contactSubject" class="footer-input-field" placeholder="Objet *" required data-i18n-ph="form_subject_ph">
+              
+              <textarea id="contactMessage" class="footer-textarea-field" rows="4" placeholder="Votre message *" required data-i18n-ph="form_message_ph"></textarea>
+
+              <div style="display: flex; justify-content: flex-end;">
+                <button type="submit" class="btn-relaxed-submit">
+                  <span data-i18n="form_btn_submit">ENVOYER</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
               </div>
-
-              <p style="font-size: 1rem; line-height: 1.7; color: var(--text-body);" data-i18n="project_desc">
-                Première édition de distribution de kits scolaires complets, de cahiers et de chaussures aux enfants scolarisés de <strong>Njiyap</strong> et des localités environnantes.
-              </p>
-
-              <div class="project-meta-grid">
-                <div class="meta-metric-item">
-                  <strong data-i18n="project_loc_label">📍 Localisation</strong>
-                  <span data-i18n="project_loc_val">Njiyap et environs</span>
-                </div>
-                <div class="meta-metric-item">
-                  <strong data-i18n="project_ben_label">👥 Bénéficiaires</strong>
-                  <span data-i18n="project_ben_val">Élèves et familles</span>
-                </div>
-                <div class="meta-metric-item">
-                  <strong data-i18n="project_met_label">📊 Impact</strong>
-                  <span data-i18n="project_met_val">100% direct</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <button class="btn-hero-solid trigger-project-modal" style="background: var(--primary); color: #ffffff; padding: 12px 24px;">
-                <span data-i18n="project_btn_view">Consulter la fiche projet</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </button>
-            </div>
+            </form>
           </div>
 
-          <!-- Partnership Hero Box -->
-          <div class="partner-hero-box" id="partenaires">
-            <div class="partner-box-bg">
-              <img src="assets/images/partner_hands.jpg" alt="Mains de solidarité">
-            </div>
+        </div>
 
-            <div class="partner-box-content">
-              <span class="section-badge-yellow" style="background: rgba(253, 184, 19, 0.2); color: var(--accent-yellow);" data-i18n="partner_sup">SOUTENIR LA FONDATION</span>
-              <h3 data-i18n="partner_title">Devenir partenaire</h3>
-              <p data-i18n="partner_desc">
-                Vous êtes une entreprise, une association, un donateur individuel ou un membre engagé de la diaspora ? Votre contribution permet de financer des kits scolaires, des soins de santé et des points d'eau potable.
-              </p>
-
-              <div class="partner-actions-stack">
-                <a href="#partenaires" class="btn-spacious-gold trigger-support-modal">
-                  <span data-i18n="partner_btn_support">Soutenir nos actions</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </a>
-                <a href="#contact" class="btn-spacious-glass">
-                  <span data-i18n="partner_btn_contact">Nous contacter</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="partner-handwritten-note" data-i18n="partner_script">
-              Ensemble, on va plus loin !
-            </div>
+        <!-- Subfooter -->
+        <div class="bottom-subfooter-bar">
+          <div data-i18n="form_copyright">
+            © 2025 Fondation Nfon Mayap. Tous droits réservés.
           </div>
 
+          <div class="bottom-socials-group">
+            <a href="#" class="bottom-social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="bottom-social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="bottom-social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.35 29 29 0 0 0-.46-5.33zM9.75 15.02V8.5l5.75 3.26-5.75 3.26z"></path></svg>
+            </a>
+          </div>
+
+          <div style="font-family: var(--font-script); font-size: 1.5rem; color: #93c5fd;" data-i18n="footer_script">
+            Ensemble pour un avenir meilleur
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <!-- ========================================================================
-       CONTACT & EXPANSIVE GRAND FOOTER
-       ======================================================================== -->
-  <footer class="footer-grand-section" id="contact">
-    <div class="container">
-      <div class="footer-grand-grid">
-        
-        <!-- Institutional Info -->
-        <div class="footer-grand-brand-side">
-          <div class="footer-brand-header">
-            <div class="footer-logo-box">
-              <img src="assets/icons/logo.svg" alt="Fondation Nfon Mayap">
-            </div>
-            <div>
-              <span class="footer-grand-title">FONDATION NFON MAYAP</span>
-              <p class="footer-grand-motto" data-i18n="brand_motto">« Servir, transmettre et construire pour les générations futures »</p>
-            </div>
-          </div>
-
-          <p style="font-size: 1.05rem; color: #cbd5e1; line-height: 1.8;" data-i18n="footer_desc">
-            Organisation à vocation sociale, humanitaire et communautaire dédiée au progrès et à la solidarité des populations de Njiyap et du département du Noun.
-          </p>
-
-          <div class="footer-contacts-spacious-list">
-            <div class="contact-row-item">
-              <div class="contact-icon-bubble">📍</div>
-              <span><strong data-i18n="footer_headquarters">Siège :</strong> <span data-i18n="footer_headquarters_val">Njiyap – Foumban, Ouest Cameroun</span></span>
-            </div>
-            <div class="contact-row-item">
-              <div class="contact-icon-bubble">📞</div>
-              <span><strong data-i18n="footer_phone_label">Téléphone direct :</strong> <a href="tel:+237699993961" style="color: var(--accent-yellow); font-weight: 800;">+237 699 993 961</a></span>
-            </div>
-            <div class="contact-row-item">
-              <div class="contact-icon-bubble">✉️</div>
-              <span><strong data-i18n="footer_email_label">Email :</strong> <a href="mailto:contact@fondationnfonmayap.org" style="color: var(--accent-yellow);">contact@fondationnfonmayap.org</a></span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="footer-form-grand-side">
-          <h3 data-i18n="contact_title">Écrire à la Fondation</h3>
-          <form class="relaxed-form-grid" id="contactForm">
-            <div class="relaxed-form-row">
-              <div>
-                <input type="text" id="contactName" class="relaxed-input" placeholder="Nom et prénom *" data-i18n-ph="form_name_placeholder" required>
-              </div>
-              <div>
-                <input type="email" id="contactEmail" class="relaxed-input" placeholder="Adresse Email *" data-i18n-ph="form_email_placeholder" required>
-              </div>
-            </div>
-
-            <div class="relaxed-form-row">
-              <div>
-                <input type="tel" id="contactPhone" class="relaxed-input" placeholder="Téléphone / WhatsApp *" data-i18n-ph="form_phone_placeholder" required>
-              </div>
-              <div>
-                <select id="contactSubject" class="relaxed-select" required>
-                  <option value="" disabled selected data-i18n="form_subject_default">Objet de votre démarche *</option>
-                  <option value="partenariat" data-i18n="form_subject_opt1">Devenir Partenaire / Mécène</option>
-                  <option value="soutien" data-i18n="form_subject_opt2">Soutenir une action (Éducation, Santé, Eau)</option>
-                  <option value="benevolat" data-i18n="form_subject_opt3">Rejoindre l'équipe / Bénévolat</option>
-                  <option value="information" data-i18n="form_subject_opt4">Demande d'information générale</option>
-                  <option value="autre" data-i18n="form_subject_opt5">Autre motif</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <textarea id="contactMessage" class="relaxed-textarea" placeholder="Partagez votre message, idée ou proposition..." data-i18n-ph="form_message_placeholder" required></textarea>
-            </div>
-
-            <div style="display: flex; justify-content: flex-end;">
-              <button type="submit" class="btn-relaxed-submit">
-                <span data-i18n="form_btn_submit">Envoyer mon message</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-              </button>
-            </div>
-          </form>
-        </div>
-
-      </div>
-
-      <!-- Bottom Subfooter Bar -->
-      <div class="bottom-subfooter-bar">
-        <div data-i18n="form_copyright">
-          © 2025 Fondation Nfon Mayap. Tous droits réservés.
-        </div>
-
-        <div class="bottom-socials-group">
-          <a href="#" class="bottom-social-link" aria-label="Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-          </a>
-          <a href="#" class="bottom-social-link" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-          </a>
-          <a href="#" class="bottom-social-link" aria-label="YouTube">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.35 29 29 0 0 0-.46-5.33zM9.75 15.02V8.5l5.75 3.26-5.75 3.26z"></path></svg>
-          </a>
-        </div>
-
-        <div style="font-family: var(--font-script); font-size: 1.5rem; color: var(--accent-yellow);" data-i18n="footer_script">
-          Ensemble pour un avenir meilleur
-        </div>
-      </div>
+    <!-- Modals -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-container" id="modalContainer"></div>
     </div>
-  </footer>
 
-  <!-- ========================================================================
-       MODALS & NOTIFICATIONS
-       ======================================================================== -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal-container" id="modalContainer"></div>
-  </div>
+    <div class="toast-container" id="toastContainer"></div>
 
-  <div class="toast-container" id="toastContainer"></div>
-
-  <!-- JavaScript & Backend SDKs -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="js/config.js"></script>
-  <script src="js/translations.js"></script>
-  <script src="js/supabase-client.js"></script>
-  <script src="js/main.js"></script>
+    <!-- JavaScript & Backend SDKs -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/main.js"></script>
+  </main>
 </body>
 </html>
