@@ -92,6 +92,96 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', handleScroll);
 
+  // --- Hero Slider / Carousel Logic ---
+  const heroSlider = document.getElementById('heroSlider');
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  const prevBtn = document.getElementById('heroPrevBtn');
+  const nextBtn = document.getElementById('heroNextBtn');
+  let currentSlide = 0;
+  let sliderInterval = null;
+
+  const goToSlide = (index) => {
+    if (!slides.length) return;
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+    currentSlide = index;
+  };
+
+  const nextSlide = () => {
+    if (!slides.length) return;
+    const nextIndex = (currentSlide + 1) % slides.length;
+    goToSlide(nextIndex);
+  };
+
+  const prevSlide = () => {
+    if (!slides.length) return;
+    const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+    goToSlide(prevIndex);
+  };
+
+  const startAutoSlide = () => {
+    stopAutoSlide();
+    sliderInterval = setInterval(nextSlide, 5500);
+  };
+
+  const stopAutoSlide = () => {
+    if (sliderInterval) clearInterval(sliderInterval);
+  };
+
+  if (dots.length) {
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const idx = parseInt(dot.getAttribute('data-index'), 10);
+        goToSlide(idx);
+        startAutoSlide();
+      });
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      startAutoSlide();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      startAutoSlide();
+    });
+  }
+
+  if (heroSlider) {
+    heroSlider.addEventListener('mouseenter', stopAutoSlide);
+    heroSlider.addEventListener('mouseleave', startAutoSlide);
+
+    // Touch Swipe Support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    heroSlider.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    heroSlider.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 50) {
+        nextSlide();
+        startAutoSlide();
+      } else if (touchEndX - touchStartX > 50) {
+        prevSlide();
+        startAutoSlide();
+      }
+    }, { passive: true });
+  }
+
+  startAutoSlide();
+
   // 3. Mobile Menu Toggle
   const mobileToggle = document.getElementById('mobileNavToggle');
   const navMenu = document.getElementById('navMenu');

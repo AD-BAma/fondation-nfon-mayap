@@ -116,41 +116,101 @@
 
   <main>
     <!-- ========================================================================
-         HERO SECTION (OLLO CHARITY CENTERED AESTHETICS)
+         HERO SECTION (OLLO CHARITY 3-SLIDE DYNAMIC ANIMATED CAROUSEL)
          ======================================================================== -->
     <section class="hero-section" id="accueil">
-      <div class="hero-bg-wrapper">
-        <img src="assets/images/hero.jpg" alt="Enfants scolarisés de Njiyap, Cameroun" class="hero-bg-img">
-        <div class="hero-overlay"></div>
+      <!-- Slides Container -->
+      <div class="hero-slider-container" id="heroSlider">
+        
+        <!-- Slide 1: Éducation & Scolarité -->
+        <div class="hero-slide active" data-slide="0">
+          <div class="hero-bg-wrapper">
+            <img src="assets/images/hero.jpg" alt="Éducation et scolarité à Njiyap" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="container hero-content">
+            <h1 class="hero-main-title" data-i18n="hero_title_1">
+              Chaque Geste Fait Une Grande Différence
+              <span data-i18n="hero_sub_1">« Servir, transmettre et construire pour les générations futures »</span>
+            </h1>
+            <p class="hero-lead-text" data-i18n="hero_desc_1">
+              Offrons aux enfants de Njiyap les fournitures, l'encadrement et les bourses scolaires nécessaires pour réussir leur avenir.
+            </p>
+            <div class="hero-buttons-row">
+              <a href="#contact" class="btn-hero-outline-pill">
+                <span data-i18n="hero_btn_volunteer">Devenir Bénévole</span>
+              </a>
+              <a href="#partenaires" class="btn-hero-solid-pill trigger-support-modal">
+                <span data-i18n="hero_btn_donate">Faire un Don</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Eau Potable & Forages -->
+        <div class="hero-slide" data-slide="1">
+          <div class="hero-bg-wrapper">
+            <img src="assets/images/action_water.jpg" alt="Accès à l'eau potable à Njiyap" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="container hero-content">
+            <h1 class="hero-main-title" data-i18n="hero_title_2">
+              L'Accès à l'Eau Potable, Source de Vie
+              <span data-i18n="hero_sub_2">« Des forages modernes et durables pour nos villages »</span>
+            </h1>
+            <p class="hero-lead-text" data-i18n="hero_desc_2">
+              Garantir une eau saine et accessible pour préserver la santé, l'hygiène et la dignité de nos familles au cœur du Noun.
+            </p>
+            <div class="hero-buttons-row">
+              <a href="#projets" class="btn-hero-outline-pill">
+                <span data-i18n="hero_btn_see_water">Voir le Projet Eau</span>
+              </a>
+              <a href="#partenaires" class="btn-hero-solid-pill trigger-support-modal">
+                <span data-i18n="hero_btn_support_water">Soutenir le Forage</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Santé & Solidarité -->
+        <div class="hero-slide" data-slide="2">
+          <div class="hero-bg-wrapper">
+            <img src="assets/images/action_health.jpg" alt="Campagnes de santé et solidarité" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="container hero-content">
+            <h1 class="hero-main-title" data-i18n="hero_title_3">
+              Solidarité Active & Soins de Santé
+              <span data-i18n="hero_sub_3">« Prendre soin des familles et des plus vulnérables »</span>
+            </h1>
+            <p class="hero-lead-text" data-i18n="hero_desc_3">
+              Consultations médicales gratuites, médicaments essentiels et accompagnement social direct pour les populations de Njiyap.
+            </p>
+            <div class="hero-buttons-row">
+              <a href="#qui-sommes-nous" class="btn-hero-outline-pill">
+                <span data-i18n="hero_btn_discover_actions">Découvrir nos Actions</span>
+              </a>
+              <a href="#partenaires" class="btn-hero-solid-pill trigger-support-modal">
+                <span data-i18n="hero_btn_join_movement">Rejoindre la Dynamique</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="container hero-content">
-        <h1 class="hero-main-title" data-i18n="hero_title">
-          Chaque Geste Fait Une Grande Différence
-          <span data-i18n="hero_sub_heading">« Servir, transmettre et construire pour les générations futures »</span>
-        </h1>
-        
-        <p class="hero-lead-text" data-i18n="hero_desc">
-          Nous œuvrons pour un avenir meilleur à travers l'éducation, la santé, l'accès à l'eau potable et le développement communautaire à Njiyap.
-        </p>
-        
-        <div class="hero-buttons-row">
-          <a href="#contact" class="btn-hero-outline-pill">
-            <span data-i18n="hero_btn_volunteer">Devenir Bénévole</span>
-          </a>
+      <!-- Navigation Arrows -->
+      <button class="hero-nav-arrow hero-prev" id="heroPrevBtn" aria-label="Diapositive précédente">‹</button>
+      <button class="hero-nav-arrow hero-next" id="heroNextBtn" aria-label="Diapositive suivante">›</button>
 
-          <a href="#partenaires" class="btn-hero-solid-pill trigger-support-modal">
-            <span data-i18n="hero_btn_donate">Faire un Don</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-
-        <!-- Carousel Indicators -->
-        <div class="hero-carousel-dots">
-          <span class="hero-dot active"></span>
-          <span class="hero-dot"></span>
-          <span class="hero-dot"></span>
-        </div>
+      <!-- 3 Interactive Carousel Dots Indicator -->
+      <div class="hero-carousel-dots" id="heroDots">
+        <button class="hero-dot active" data-index="0" aria-label="Slide 1 - Éducation"></button>
+        <button class="hero-dot" data-index="1" aria-label="Slide 2 - Eau Potable"></button>
+        <button class="hero-dot" data-index="2" aria-label="Slide 3 - Santé"></button>
       </div>
     </section>
 

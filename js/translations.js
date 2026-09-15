@@ -22,18 +22,26 @@ const translations = {
     btn_support: "Soutenir",
     brand_motto: "« Servir, transmettre et construire pour les générations futures »",
 
-    // Hero Section
-    hero_title: "Chaque Geste Fait Une Grande Différence",
-    hero_sub_heading: "« Servir, transmettre et construire pour les générations futures »",
-    hero_desc: "Nous œuvrons pour un avenir meilleur à travers l'éducation, la santé, l'accès à l'eau potable et le développement communautaire à Njiyap.",
+    // Hero Carousel - Slide 1 (Éducation)
+    hero_title_1: "Chaque Geste Fait Une Grande Différence",
+    hero_sub_1: "« Servir, transmettre et construire pour les générations futures »",
+    hero_desc_1: "Offrons aux enfants de Njiyap les fournitures, l'encadrement et les bourses scolaires nécessaires pour réussir leur avenir.",
     hero_btn_volunteer: "Devenir Bénévole",
     hero_btn_donate: "Faire un Don",
-    hero_btn_discover: "Découvrir la Fondation",
-    hero_btn_support: "Soutenir nos actions",
-    hero_btn_message: "Message de la Fondation",
-    hero_location: "📍 Njiyap – Foumban, Département du Noun, Région de l'Ouest",
-    hero_scroll: "Découvrir nos missions",
-    hero_script: "Ensemble pour un avenir meilleur !",
+
+    // Hero Carousel - Slide 2 (Eau Potable)
+    hero_title_2: "L'Accès à l'Eau Potable, Source de Vie",
+    hero_sub_2: "« Des forages modernes et durables pour nos villages »",
+    hero_desc_2: "Garantir une eau saine et accessible pour préserver la santé, l'hygiène et la dignité de nos familles au cœur du Noun.",
+    hero_btn_see_water: "Voir le Projet Eau",
+    hero_btn_support_water: "Soutenir le Forage",
+
+    // Hero Carousel - Slide 3 (Santé & Solidarité)
+    hero_title_3: "Solidarité Active & Soins de Santé",
+    hero_sub_3: "« Prendre soin des familles et des plus vulnérables »",
+    hero_desc_3: "Consultations médicales gratuites, médicaments essentiels et accompagnement social direct pour les populations de Njiyap.",
+    hero_btn_discover_actions: "Découvrir nos Actions",
+    hero_btn_join_movement: "Rejoindre la Dynamique",
 
     // Confidence Blue Trust Banner
     promo_banner_title: "Organisation à vocation sociale, humanitaire et communautaire — Njiyap, Foumban",
@@ -170,18 +178,26 @@ const translations = {
     btn_support: "Support Us",
     brand_motto: "“Serving, transmitting, and building for future generations”",
 
-    // Hero Section
-    hero_title: "Small Effort Makes Big Change",
-    hero_sub_heading: "“Serving, transmitting, and building for future generations”",
-    hero_desc: "We are working for a brighter future through education, healthcare, clean water access, and community empowerment in Njiyap.",
+    // Hero Carousel - Slide 1 (Education)
+    hero_title_1: "Small Effort Makes Big Change",
+    hero_sub_1: "“Serving, transmitting, and building for future generations”",
+    hero_desc_1: "Empowering children in Njiyap with essential school kits, mentoring, and scholarships for a brighter future.",
     hero_btn_volunteer: "Become a Volunteer",
     hero_btn_donate: "Donate Now",
-    hero_btn_discover: "Discover the Foundation",
-    hero_btn_support: "Support Our Actions",
-    hero_btn_message: "Foundation Message",
-    hero_location: "📍 Njiyap – Foumban, Noun Division, West Region, Cameroon",
-    hero_scroll: "Discover our missions",
-    hero_script: "Together for a brighter future!",
+
+    // Hero Carousel - Slide 2 (Water)
+    hero_title_2: "Safe Drinking Water, Source of Life",
+    hero_sub_2: "“Modern and sustainable boreholes for our communities”",
+    hero_desc_2: "Securing clean, accessible water to safeguard health, hygiene, and human dignity across the Noun division.",
+    hero_btn_see_water: "Explore Water Project",
+    hero_btn_support_water: "Fund a Borehole",
+
+    // Hero Carousel - Slide 3 (Health & Solidarity)
+    hero_title_3: "Active Solidarity & Healthcare",
+    hero_sub_3: "“Caring for families and vulnerable community members”",
+    hero_desc_3: "Free medical consultations, essential supplies, and direct social assistance for the people of Njiyap.",
+    hero_btn_discover_actions: "Discover Our Actions",
+    hero_btn_join_movement: "Join the Movement",
 
     // Confidence Blue Trust Banner
     promo_banner_title: "We are a non-profit Charity & NGO Organization — Njiyap, Cameroon",
