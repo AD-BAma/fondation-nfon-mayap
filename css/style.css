@@ -281,24 +281,24 @@ button {
   white-space: nowrap;
 }
 
-/* Navigation Menu positioned on the right */
+/* Navigation Menu positioned on the right with a big gap from logo */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 26px;
   list-style: none;
-  margin-left: 30px;
-  margin-right: 24px;
+  margin: 0 24px 0 auto;
 }
 
 .nav-link {
   font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.96rem;
+  font-weight: 700;
   color: var(--text-heading);
   position: relative;
   padding: 8px 0;
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -308,14 +308,14 @@ button {
   left: 0;
   width: 0%;
   height: 2.5px;
-  background: var(--accent-blue);
+  background: #f59e0b;
   transition: var(--transition);
   border-radius: 2px;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--accent-blue);
+  color: #f59e0b;
 }
 
 .nav-link:hover::after,
